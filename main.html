@@ -1,16 +1,35 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes: Rectangle and Square</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add a CSS file if needed -->
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <h1>JavaScript Shapes - Rectangle and Square</h1>
+    
+    <h2>Rectangle Example:</h2>
+    <p id="rectangle-area"></p>
 
+    <h2>Square Example:</h2>
+    <p id="square-area"></p>
+    <p id="square-perimeter"></p>
+
+    <script type="text/javascript" src="script.js"></script>
+
+    <script type="text/javascript">
+        // Create a Rectangle instance
+        const rectangle = new Rectangle(5, 10);
+        document.getElementById('rectangle-area').textContent = `Rectangle Area: ${rectangle.getArea()} (5 * 10)`;
+
+        // Create a Square instance
+        const square = new Square(7);
+        document.getElementById('square-area').textContent = `Square Area: ${square.getArea()} (7 * 7)`;
+        document.getElementById('square-perimeter').textContent = `Square Perimeter: ${square.getPerimeter()} (7 * 4)`;
+    </script>
 </body>
 
 </html>
